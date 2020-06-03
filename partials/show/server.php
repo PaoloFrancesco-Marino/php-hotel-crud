@@ -2,21 +2,30 @@
 // connect db
 include __DIR__ . '/../database.php';
 
+// utilities
+include __DIR__ . '/../functions.php';
+
 // get room ID
 $id_room = $_GET['id'];
 
-// query selected room
-$sql = "SELECT * FROM `stanze` WHERE `id` = $id_room";
-$result = $conn->query($sql);
+// // query selected room
+// $sql = "SELECT * FROM `stanze` WHERE `id` = $id_room";
+// $result = $conn->query($sql);
 
-if ($conn && $result->num_rows > 0) {
-    $room = $result->fetch_assoc();
-}  elseif ($result) {
-    echo 'No results'; 
-} else {
-    echo 'Connessione non disponibile';
-}
+// if ($conn && $result->num_rows > 0) {
+//     $room = $result->fetch_assoc();
+// }  elseif ($result) {
+//     echo 'No results'; 
+// } else {
+//     echo 'Connessione non disponibile';
+// }
 
 
-// close connection
-$conn->close();
+// // close connection
+// $conn->close();
+
+/**
+ * add functions
+*/
+
+$room = getById($conn, 'stanze', $id_room);
