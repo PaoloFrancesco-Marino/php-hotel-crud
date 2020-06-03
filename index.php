@@ -56,10 +56,11 @@ include __DIR__ . '/partials/templates/head.php';
                         }
                     ?>
                 </tbody>
-            </table>
+            </table><!-- ./table -->
         </div>
-    </div>
-</main>
+    </div><!-- ./Row -->
+</main><!-- ./Main -->
+
     
 <?php 
 include __DIR__ . '/partials/templates/footer.php'

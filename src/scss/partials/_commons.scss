@@ -5,4 +5,11 @@
 body {
     background-color: $bg-col;
     color: $text-col;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex-grow: 1;
 }

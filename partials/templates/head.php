@@ -16,3 +16,7 @@ include_once __DIR__ . '/../../env.php';
 <?php 
 include __DIR__ . '/header.php';
 ?>
+
+<!-- #app -->
+<div id="app" class="pb-2">
+

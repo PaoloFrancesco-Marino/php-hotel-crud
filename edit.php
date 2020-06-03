@@ -8,7 +8,7 @@ include __DIR__ . '/partials/templates/head.php';
     <div class="row">
         <div class="col-12">
             <header class="my-4" >
-                <h1 class="text-primary">Edit Room </h1>
+                <h1 class="text-secondary">Edit Room </h1>
             </header>
 
             <form action="./partials/update/server-update.php" method="POST">
@@ -27,9 +27,11 @@ include __DIR__ . '/partials/templates/head.php';
 
                 <div class="form-group text-right">
                     <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
-                    <input class="btn btn-primary" type="submit" value="Send">
+                    <input class="btn btn-secondary" type="submit" value="Send">
                 </div>
             </form>
+
+            <a class="btn btn-secondary" href="<?php echo $base_path; ?>show.php?id=<?php echo $room['id'];?>">Details Room</a>
         </div>
     </div>
 </main>
