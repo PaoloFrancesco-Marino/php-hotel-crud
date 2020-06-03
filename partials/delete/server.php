@@ -11,9 +11,9 @@ if (empty($_POST['id'])) {
 }
 
 $id_room = $_POST['id'];
-$url = "$base_path?-del=room";
+$url = "$base_path?del=room";
 
-// // Query Delete
+//  Query Delete
 // $sql = "DELETE FROM `stanze` WHERE `id` = $id_room";
 // $result = $conn->query($sql);
 
