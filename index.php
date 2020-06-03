@@ -6,7 +6,7 @@ include __DIR__ . '/partials/templates/head.php';
 ?>
 
 <?php //alerts
-    if (! empty($_GET['del'])) { ?>
+    if (!empty($_GET['del'])) { ?>
     <div class="alert alert-success">
         Stanza cancellata con successo.
     </div>

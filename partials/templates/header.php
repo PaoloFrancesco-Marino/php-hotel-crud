@@ -9,6 +9,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo $base_path; ?>create.php">NEW ROOM</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo $base_path; ?>bookings.php">BOOKINGS</a>
+            </li>
         </ul>
     </nav><!-- ./Nav -->
 </header><!-- ./Header -->
